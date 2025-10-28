@@ -1,0 +1,81 @@
+Setting Up / Starting
+
+
+git config --global user.name "{USERNAME}" >> setting up the username of your git account
+
+git config --global user.email "your@email.com" >> setting up the email of your git account
+
+git config --list >> lists all of your git settings
+
+git init >> makes a new git repository (your directory)
+
+git clone <repo_url> >> copies existing repository to your directory
+
+
+Getting Information
+
+
+git status >> informates you about repository (like changes, edits)
+
+git log >> shows you the log of commits
+
+git show <commit_id> >> shows you details of specified commit
+
+git diff >> shows you changes these weren't committed
+
+
+Changing the Files
+
+
+git add <file_name> >> adds specified file to repository (you have to commit to apply every changes)
+
+git add . >> adds all of the files to the repository
+
+git commit -m "messege" >> commits the changes
+
+git rm <file> >> deletes the specified files and prepares for commit
+
+git mv <old> <new> >> moves the file(s) or changes file(s) name(s)
+
+
+Branch Managemant
+
+
+git branch >> lists the current branch
+
+git branch <name> >> makes a new branch
+
+git checkout <name> >> changes the branch
+
+git switch <name> >> new method of changing the branch
+
+git switch -c <name> >> makes a new branch and switches to new branch
+
+git merge <branch> >> merges the specified branch with current branch
+
+git branch -d <name> >> deletes the branch if it's been merged
+
+git branch -D <name> >> forced version of :"git branch -d <name>":
+
+
+Repository Operations (Remote)
+
+
+git remote -v >> shows repositories adresses
+
+git remote add origin <url> >> addes new repository address
+
+git fetch >> downloads the changes of repository but doesn't merge them
+
+git pull >> downloads the changes of repository and merge them
+
+git push -u origin main >> does the brach connection while pushing at the first time
+
+
+Restore the Changes
+
+
+git restore <file> >> turns the specified file to the last committed version
+
+git restore . >> turns all of the files to the last committed version
+
