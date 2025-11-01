@@ -1,7 +1,7 @@
 Setting Up / Starting
 
 
-git config --global user.name "{USERNAME}" >> setting up the username of your git account
+git config --global user.name "<USERNAME>" >> setting up the username of your git account
 
 git config --global user.email "your@email.com" >> setting up the email of your git account
 
@@ -78,4 +78,3 @@ Restore the Changes
 git restore <file> >> turns the specified file to the last committed version
 
 git restore . >> turns all of the files to the last committed version
-
